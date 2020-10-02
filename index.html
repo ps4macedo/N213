@@ -71,13 +71,13 @@ background-color: transparent;
 <hr width="45%" size="1" color="#ff5757">
 <script>
 function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Instalando Cache Offline: <font color=\"#ee596f\">" + Percent + "%</font>";}
-function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="<font color=\"#6089f6\">Instalação da Cache Concluída!</font>";},1000);setTimeout(function(){window.msgs.innerHTML="Agora saia usando o <font color=\"#ee596f\">PS,</font> desbilite a rede (se for usar em <font color=\"#ee596f\">offline</font>) e reinicie o console.</font>";},3000);}window.applicationCache.addEventListener("msgs",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};</script>
+function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="<font color=\"#6089f6\">Instalação da Cache Concluída!</font>";},1000);setTimeout(function(){window.msgs.innerHTML="Agora <font color=\"#ee596f\">saia</font> do navegador, desbilite a rede (se for usar em <font color=\"#ee596f\">offline</font>) e reinicie o console.</font>";},3000);}window.applicationCache.addEventListener("msgs",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};</script>
 
 </script>
 <script>function print(){}</script>
 <script src="jailbreak.js"></script>
 <script src="webkit.js"></script>
-<h1 id=msgs style='font-size:25px;text-align:center;color:#6089f6;'> </h1>
+<h1 id=msgs style='font-size:25px;text-align:center;color:#6089f6;'>PS4 JAILBREAK 6.72</h1>
 <hr width="45%" size="1" color="#ff5757">
 <div class="invisivel" style="text-align:center">
 <div style="text-align:center">
@@ -127,7 +127,7 @@ default:document.getElementById("msgs").innerHTML = "erro";
 }
 
 function fora(){
-document.getElementById("msgs").innerHTML = "NOVO JAILBREAK 6.72<font style='color:#ee596f;'>6.72</font>";
+document.getElementById("msgs").innerHTML = "<font style='color:#ee596f;'>Novo</font> Jailbreak 6.72";
 }
 
 function invisivel() {
