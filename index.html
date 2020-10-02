@@ -71,7 +71,7 @@ background-color: transparent;
 <hr width="45%" size="1" color="#ff5757">
 <script>
 function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Instalando Cache Offline: <font color=\"#ee596f\">" + Percent + "%</font>";}
-function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="<font color=\"#6089f6\">Instalação da Cache Concluída!</font>";},1000);setTimeout(function(){window.msgs.innerHTML="Agora <font color=\"#ee596f\">saia</font> do navegador, desbilite a rede (se for usar em <font color=\"#ee596f\">offline</font>) e reinicie o console.</font>";},3000);}window.applicationCache.addEventListener("msgs",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};</script>
+function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="<font color=\"#6089f6\">Instalação da Cache Concluída!</font>";},1000);setTimeout(function(){window.msgs.innerHTML="Agora <font color=\"#ee596f\">saia</font> do navegador, desbilite a rede <br>(se for usar em <font color=\"#ee596f\">offline</font>) e reinicie o console.</font>";},3000);}window.applicationCache.addEventListener("msgs",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};</script>
 
 </script>
 <script>function print(){}</script>
@@ -188,7 +188,7 @@ var spoofed=navigator.userAgent.indexOf("6.72")>=0 ? false : true;
 if (!spoofed){
 	exploit(true);}
 else{
-	setTimeout(function(){document.getElementById("msgs").innerHTML="PS4 Jailbreak 6.72 HEN Loaded Already ✔"; }, 500);}
+	setTimeout(function(){document.getElementById("msgs").innerHTML="PS4 Jailbreak 6.72 HEN já Carregado ✔"; }, 500);}
 }
 
 function payload_finished(payload){
