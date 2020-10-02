@@ -71,13 +71,13 @@ background-color: transparent;
 <hr width="45%" size="1" color="#ff5757">
 <script>
 function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Instalando Cache Offline: <font color=\"#ee596f\">" + Percent + "%</font>";}
-function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="<font color=\"#6089f6\">Instalação na Cache Concluída!</font>";},1000);setTimeout(function(){window.msgs.innerHTML="Agora saia usando o <font color=\"#ee596f\">PS,</font> desbilite a rede (se for usar em offline) e reinicie o console.</font>";},3000);}window.applicationCache.addEventListener("msgs",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};</script>
+function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="<font color=\"#6089f6\">Instalação da Cache Concluída!</font>";},1000);setTimeout(function(){window.msgs.innerHTML="Agora saia usando o <font color=\"#ee596f\">PS,</font> desbilite a rede (se for usar em <font color=\"#ee596f\">offline</font>) e reinicie o console.</font>";},3000);}window.applicationCache.addEventListener("msgs",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};</script>
 
 </script>
 <script>function print(){}</script>
 <script src="jailbreak.js"></script>
 <script src="webkit.js"></script>
-<h1 id=msgs style='font-size:25px;text-align:center;color:#6089f6;'></h1>
+<h1 id=msgs style='font-size:25px;text-align:center;color:#6089f6;'> </h1>
 <hr width="45%" size="1" color="#ff5757">
 <div class="invisivel" style="text-align:center">
 <div style="text-align:center">
@@ -121,7 +121,7 @@ case '3':document.getElementById("msgs").innerHTML = "Não entre mais no navegad
 case '4':document.getElementById("msgs").innerHTML = "Ao ligar pela primeira vez no dia, aguarde 2 minutos.";break;
 case '5':document.getElementById("msgs").innerHTML = "Seguidos KP, deslige totalmente e retire o cabo de força, por 10 minutos.";break;
 case '6':document.getElementById("msgs").innerHTML = "Clique para ver outros Hosts";break;
-case 'e1':document.getElementById("msgs").innerHTML = "Ativa Jailbreak + <font style='color:#ee596f;'>HEN v2.1.3</font> (Leeful).";break;
+case 'e1':document.getElementById("msgs").innerHTML = "Ativa o <font style='color:#ee596f;'>novo exploit</font> (DarkModderVC) + <font style='color:#ee596f;'>HEN v2.1.3</font> (Leeful).";break;
 default:document.getElementById("msgs").innerHTML = "erro";
 }
 }
