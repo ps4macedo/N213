@@ -193,14 +193,12 @@ else{
 
 function payload_finished(payload){
 document.getElementById("msgs").innerHTML="<h1 style='color:#6089f6;font-size:25px;text-align:center;'>Exploit ✔ HEN ✔ </h1>";
-localStorage.Fail--;
-localStorage.Success++;
 document.getElementById("success").innerHTML=localStorage.Success;
 }
 
 function triggerFunction(payload){
 preloader();
-if(payload == "hen"){localStorage.Fail++; hen();};
+if(payload == "hen"){hen();};
 loader();
 payload_finished(payload);
 }
@@ -215,7 +213,6 @@ else{
 
 function exploit(val){
 document.getElementById("msgs").innerHTML="<h1 style='color:#ee596f;font-size:25px;text-align:center;'>Exploit ... HEN ...</h1>";
-localStorage.Fail++;
 setTimeout(function(){jb(val);}, 500);
 }
 
