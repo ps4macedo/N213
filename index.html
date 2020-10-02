@@ -75,7 +75,7 @@ document.getElementById("success").innerHTML=localStorage.Success;
 document.getElementById("fail").innerHTML=localStorage.Fail;}
 	
 function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Instalando Cache Offline: <font color=\"#ee596f\">" + Percent + "%</font>";}
-function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="<font color=\"#6089f6\">Instalação na Cache Concluída!</font>";},2000);setTimeout(function(){window.msgs.innerHTML="Agora saia usando o <font color=\"#ee596f\">PS, desbilite a rede (se for usar em off)<br> e reinicie o PS4.</font> Ao iniciar o console, entre novamente no navegador.";},3000);}window.applicationCache.addEventListener("msgs",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};</script>
+function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="<font color=\"#6089f6\">Instalação na Cache Concluída!</font>";},0);setTimeout(function(){window.msgs.innerHTML="<font color=\"#ee596f\">Cache Concluída!</font> Agora saia usando o <font color=\"#ee596f\">PS, desbilite a rede (se for usar em off)<br> e reinicie o PS4.</font> Ao iniciar o console, entre novamente no navegador.";},3000);}window.applicationCache.addEventListener("msgs",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};</script>
 
 </script>
 <script>function print(){}</script>
@@ -85,7 +85,7 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="<fo
 <hr width="45%" size="1" color="#ff5757">
 <div class="invisivel" style="text-align:center">
 <div style="text-align:center">
-<font size="3">Pressione o <font color="#ee596f"><b>CIRCULO PARA SAIR.<b></font></font>
+<font size="3">Pressione o <font color="#ee596f"><b>PS PARA SAIR.<b></font></font>
 </div>
 <div style="text-align:center">
 <br><br><br>
@@ -196,8 +196,7 @@ else{
 }
 
 function payload_finished(payload){
-setTimeout(function(){document.getElementById("msgs").innerHTML="Load Successful!!";}, 3000);
-setTimeout(function(){document.getElementById("msgs").innerHTML="PS4 Jailbreak 6.72 Payload Loaded Succesfully !!"; }, 7000);
+document.getElementById("msgs").innerHTML="<h1 style='color:#6089f6;font-size:25px;text-align:center;'>Exploit ✔ HEN ✔ </h1>";
 localStorage.Fail--;
 localStorage.Success++;
 document.getElementById("success").innerHTML=localStorage.Success;
@@ -219,13 +218,13 @@ else{
 }
 
 function exploit(val){
-document.getElementById("msgs").innerHTML="Running Jailbreak Exploit!!";
+document.getElementById("msgs").innerHTML="<h1 style='font-size:25px;text-align:center;'><font color=\"#6089f6\">Exploit ✔ </font><font color=\"#ee596f\">HEN ... </font></h1>";
 localStorage.Fail++;
 setTimeout(function(){jb(val);}, 500);
 }
 
 function load_payload(payload){	
-document.getElementById("msgs").innerHTML="Loading! Please Wait!!";
+document.getElementById("msgs").innerHTML="<h1 style='color:#ee596f;font-size:25px;text-align:center;'>Exploit ... HEN ...</h1>";
 setTimeout(function(){triggerFunction(payload)}, 500);
 }
 
